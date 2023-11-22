@@ -1,5 +1,5 @@
 html{
-    background-color: white;
+    background-color: rgb(254, 148, 0);
     border: 2px red solid;
 }
 
@@ -32,4 +32,14 @@ html{
 /* hider */
 .hide {
     display: none;
+}
+
+.answer-container button
+{
+    width: 15%;
+    margin: 1px;
+    
+}
+.answer-container button:hover{
+    background-color: cyan;
 }
