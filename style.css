@@ -1,0 +1,35 @@
+html{
+    background-color: white;
+    border: 2px red solid;
+}
+
+.instruction h2, p
+{
+    background-color: aquamarine;
+    border: 1px rgb(8, 0, 255) solid;
+}
+/*
+.display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-top: rgb(76, 86, 117) 1px solid;
+    font-size: 1.7rem;
+}
+
+.display div {
+    text-align: center;
+    font-size: 1.7rem;
+}
+*/
+.display{
+    margin: 10px;
+    border-top: rgb(76, 86, 117) 1px solid;
+}
+
+/* hider */
+.hide {
+    display: none;
+}
