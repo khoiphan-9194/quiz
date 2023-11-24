@@ -78,28 +78,28 @@ var timer= 40;
 //object array
 const question_data = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-        answers: ["<script>", "<javascript>", "<js>", "<scripting>"], //array of answer
+        question: "Ngay nao la ngay dam cuoi?",
+        answers: ["11/01/2018", "06/19/2022", "01/07/1994", "Biet lam con cho"], //array of answer
         correctAnswer: 0,
     },
     {
-        question: "How to write an IF statement in JavaScript?",
-        answers: ["if i == 5 then", "if i = 5 then", "if(i == 5)", "if i = 5"],
+        question: "Gap nhau dau tien o dau?",
+        answers: ["shopping mall", "de anza college", "vietnam", "biet lam con heo"],
         correctAnswer: 1,
     },
     {
-        question: "Which operator is used to assign a value to a variable?",
-        answers: ["=", "-", "x", "*"],
+        question: "con heo thich an gi nhat",
+        answers: ["thit bo", "tra sua", "pho bo", "banh mi"],
         correctAnswer: 2,
     },
     {
-        question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
-        answers: ["<script href='xxx.js'>", "<script name='xxx.js'>", "<script src='xxx.js'>", "<script file='xxx.js'>"],
-        correctAnswer: 3,
+        question: "con cun thich an gi nhat",
+        answers: ["an kem", "uong tra sua", "an banh ngot", "an ga chien"],
+        correctAnswer: 2,
     },
     {
-        question: "How do you write 'Hello World' in an alert box?",
-        answers: ["msgBox('Hello World');", "alertBox('Hello World');", "msg('Hello World');", "alert('Hello World');"],
+        question: "nam sau cun va heo se di dau",
+        answers: ["Japan", "VietNam", "Hawaii", "Khong di dau het"],
         correctAnswer: 3
     }
 ];
