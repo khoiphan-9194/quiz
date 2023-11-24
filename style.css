@@ -1,29 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 html{
-    background-color: rgb(211, 201, 187);
-    border: 2px red solid;
+    background-color: rgb(252, 252, 252);
+    height: 100%;
 }
 
-.instruction h2, p
-{
-    background-color: aquamarine;
-    border: 1px rgb(8, 0, 255) solid;
-}
-/*
-.display {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-    border-top: rgb(76, 86, 117) 1px solid;
-    font-size: 1.7rem;
-}
 
-.display div {
-    text-align: center;
-    font-size: 1.7rem;
-}
-*/
+
 .display{
     margin: 10px;
     border-top: rgb(76, 86, 117) 1px solid;
@@ -34,12 +22,189 @@ html{
     display: none;
 }
 
+
+header{
+    background-color:rgb(26, 119, 119);
+  
+    
+}
+
+header h1 {
+    
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+    
+
+}
+
+header div a {
+    text-decoration: none;
+    height: 40px;
+    margin-top: 60px;
+  
+}
+
+header h3{
+    position: relative;
+    top: 55px;
+}
+
+header div{
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    margin: -30px 45px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  
+}
+header div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+.instruction 
+{
+
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin: 10px 10px;
+    font-size: 40px;
+    box-shadow: 0 0 10px 2px;
+    border-top: 10px black solid;
+}
+.instruction h2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+#start_btn
+{
+ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+ 
+}
+
+.quiz-box {
+
+    
+  
+    background-color: rgb(203, 229, 233);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 2px;
+    font-size: 1.7rem;
+   
+    
+    
+    
+}
+
+.start-button {
+    font-weight: bold;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+   
+}
+  
+   
+
+
+.start-button:hover{
+    border-color: black;
+    background-color: teal;
+    cursor: pointer;
+    transform: translate(-0.1rem);
+    box-shadow: 0 0.4rem 1.4rem 0 black;
+}
+
+
+.answer-button{
+
+    margin-top: 15px;
+  
+    
+}
+
+
+.answer-container
+{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
 .answer-container button
 {
     width: 15%;
-    margin: 1px;
+    margin: 5px;
+    font-size: 25px;
+
+
+    
     
 }
 .answer-container button:hover{
     background-color: cyan;
 }
+
+
+   
+
+.endGame
+{
+
+  
+    margin: 30px 350px; 
+    font-size: 30px;
+}
+.endGame #initials
+{
+    width: 330px;
+    height: 30px;
+}
+
+.endGame button
+{
+    width: 120px;
+    height: 30px;
+}
+
+.high-scores
+{
+ 
+    width: 50%;
+    margin-left: 30%;
+}
+.high-scores button
+{
+    width: 30%;
+    margin: 0px 30px;
+    ;
+}
+
+
+
+
+/*
+   <input type="text" name="initials" id="initials" placeholder="Initials">
+            <button type="submit" class="submit" disabled>Submit</button>
+
+*/

@@ -296,60 +296,8 @@ checkAnswer(3);
 
 
 
-/*
-   <!-- hide -->
-       <!--HighScores leaderboard  -->
-       <div class="high-scores">
-        <h2>High Scores</h2>
-        <ul class="high-scores-list"> </ul>
-        <button class="go-back">Go back</button>
-        <button class="clear-scores">Clear High Scores</button>
-    </div>
 
 
-
-
-
-
-
-
-    function setHighScores() {
-    //display score
-    var currentScore = score;
-    currentScoreEl.textContent = currentScore;
-
-    //get highscores from localStorage or return an empty array if there aren't any
-    var highScores = JSON.parse(localStorage.getItem("highScores"));
-    if (!highScores) {
-        highScores = [];
-    };
-
-    //submit highscores to local storage and add them to highScores already stored.
-    submitEL.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        var initials = document.querySelector("#initials").value;
-
-        var mostRecentScore = {
-            score: currentScore,
-            initials: initials
-        };
-
-      
-
-        localStorage.setItem("highScores", JSON.stringify(highScores));
-        showHighScoresList();
-    });
-};
-
-
-*/
-
-skipEl.addEventListener("click",function(){
-        
-    location.reload();
-
-  });   
   
   
 
@@ -372,62 +320,44 @@ function submission()
                submitEl.disabled = !entered_input.value;
            });
 
-
-        //   var highScores = JSON.parse(localStorage.getItem("highScores"));
-          // if (!highScores) {
-        //    highScores = [];
-             // high_scores_listEl.textContent = highScores.initialEl +" " + highScores.scoreEl;
-          // };
-
            submitEl.addEventListener("click",function(event){
                
                event.preventDefault();
                //console.log(initial_data);
                var initial_data = document.querySelector("#initials").value;
 
-               var highScores =[];
+               var score_dataArr =[];
                var score_data ={
+
                    scoreEl: score,
                    initialEl: initial_data
                }
 
+               score_dataArr.push(score_data);
+               score_dataArr = score_dataArr.concat(JSON.parse(localStorage.getItem('score_dataArr')||'[]'));
+               console.log(score_dataArr);
+
     
 
-
-             
-
-               highScores.push(score_data);
-
-            localStorage.setItem("highScores", JSON.stringify(highScores));
-          //  renderMessage();
+            localStorage.setItem("score_dataArr", JSON.stringify(score_dataArr));
+            renderMessage();
              
                });
 
+
                
+   
 
-
-        
-    
-
-              
-     
+    }
 
 
 
-
-
-        function renderMessage() {
-            var highScores = JSON.parse(localStorage.getItem("highScores"));
-            
-         
-
-
-            for (let i = 0; i < highScores.length; i++) {
-                var ListEl = document.createElement("li");
-                ListEl.textContent = highScores[i].initialEl + "- " + highScores[i].scoreEl;
-                high_scores_listEl.appendChild(ListEl);
-            }
-
+    function renderMessage() {
+        var score_list = JSON.parse(localStorage.getItem("score_dataArr"));
+        for (let i = 0; i < score_list.length; i++) {
+            var ListEl = document.createElement("li");
+            ListEl.textContent = score_list[i].initialEl + "- " + score_list[i].scoreEl;
+            high_scores_listEl.appendChild(ListEl);
         }
 
     }
@@ -441,3 +371,17 @@ function submission()
               
             });
         
+
+            viewscoreEl.addEventListener("click",function(event)
+            {
+                event.preventDefault();
+                renderMessage();
+            });
+
+            go_backEl.addEventListener("click",function(){
+        
+                location.reload();
+            
+              });   
+    
+          
