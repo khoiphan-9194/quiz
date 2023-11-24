@@ -12,7 +12,7 @@
     <header>
        <h1>QUIZ</h1>
        <div>
-        <h3>Time:<span class="time"> (lat nua bo time vao)</span></h3>
+        <h3>Time: <span class="time">60</span></h3>
         <a class="view-scores">View High Scores</a>
        </div>
     </header>
@@ -20,9 +20,9 @@
     <main class ="main-page">
       <div class="instruction">
         <h2>Instruction</h2>
-        <p>Answer the following JavaScript related questions within the time-limit of 75 seconds.
+        <p>Answer the following questions within 60 seconds.
           Correct answers will be scored, 10 points each. 10 seconds taken
-          off the clock for each incorrect answer given. Good Luck
+          off the clock for each incorrect answer given. Good Luck!!!
       </p>
       </div>
 
@@ -33,11 +33,10 @@
         </section>
 
         <!-- hide -->
-        <h2 class="question-display hide">Question: <span class="question"> cai nay se print questions</span> </h2>
+        <h2 class="question-display hide">Question: <span class="question"></span> </h2>
 
         <div class = "answer-button hide"> <!-- hide -->
-                  
-         
+                
           <div class="answer-container">
             <button id="btnAns-1">Answer 1</button>
           </div>
@@ -53,15 +52,13 @@
           <div class="answer-container">
             <button id="btnAns-4">Answer 4</button>
           </div>
-
-
         </div>
 
 
-        <div class="display"> <!-- hide -->
-          <h4 id="answer">answer: </h4>
+        <div class="display hide"> <!-- hide -->
+          <h4 id="answer">Answer: </h4>
           <div>
-              <p>Score</p>
+              <p>Score:</p>
               <h4 id="score">0</h4>
           </div>
       </div>
@@ -69,8 +66,8 @@
 
 
 
-      <div class = "endGame" > <!-- hide -->
-        <h2></h2>
+      <div class = "endGame hide"> <!-- hide -->
+  
 
         <h2 class="end-title">End of Quiz!</h2>
         <p>You scored: <span class="current-score"></span></p>
@@ -79,15 +76,15 @@
             <input type="text" name="initials" id="initials" placeholder="Initials">
             <button type="submit" class="submit" disabled>Submit</button>
         </form>
-        <button class="skip">Skip</button>
+      <!--    <button class="skip">Skip</button>     -->
       </div>
 
 
         <!-- hide -->
        <!--HighScores leaderboard  -->
-       <div class="high-scores">
+       <div class="high-scores hide">
         <h2>High Scores</h2>
-        <ul class="high-scores-list">de o cho nay</ul>
+        <ul class="high-scores-list">---------***---------</ul>
         <button class="go-back">Go back</button>
         <button class="clear-scores">Clear High Scores</button>
     </div>
