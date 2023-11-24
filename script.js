@@ -110,7 +110,7 @@ function showQuestion()
         Timeup();
         savedScore();
         submission();
-        //
+        
         
     }
 }
@@ -294,7 +294,7 @@ function submission()
 
    
              //clear scores from local storage and remove the current list
-       clear_scoresEl.addEventListener("click", function () 
+    clear_scoresEl.addEventListener("click", function () 
             {
                  localStorage.clear();
                 high_scores_listEl.innerHTML = '';   

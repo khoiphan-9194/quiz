@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 html{
     background-color: rgb(252, 252, 252);
     height: 100%;
@@ -35,7 +34,6 @@ header h1 {
     position: relative;
     top: 10px;
     
-
 }
 
 header h3{
@@ -71,7 +69,6 @@ header div a:hover {
 
 .instruction 
 {
-
     background-color: aquamarine;
     border-radius: 10px;
     margin: 10px 10px;
