@@ -307,13 +307,22 @@ function submission()
     viewscoreEl.addEventListener("click",function(event)
             {
                 event.preventDefault();
-                renderMessage();
-            });
+               
+                    endGameEl.classList.add("hide");
+                    instructionsEl.classList.add("hide");
+                    start_buttonEl.classList.add("hide");
+                    high_scoresEl.classList.remove("hide");
+                   // viewscoreEl.style.pointerEvents = "none";
+                    renderMessage();
+          
+                
+            },{once : true});  // the button View High Scores will only work one time once it pressed
+
 
     go_backEl.addEventListener("click",function(){
         
         location.reload();
             
-        });   
+        }); 
     
           
