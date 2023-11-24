@@ -162,12 +162,10 @@ function countdown() {
 };
 
 
-
 function Timeup()
 {
    
-      //stop timer
-     
+        //stop timer
     timEl.textContent = " timed out !!!!";
        // display questions and answers
     questionDisplay.classList.add("hide");
@@ -177,8 +175,6 @@ function Timeup()
     
 }
 
-
-
 function startHider() {
     //remove instructions and start Quiz button from page
     viewscoreEl.classList.add("hide");
@@ -187,9 +183,7 @@ function startHider() {
     // display questions and answers
     questionDisplay.classList.remove("hide");
     buttonDisplay.classList.remove("hide");
-    displayEl.classList.remove("hide");
-    
-   
+    displayEl.classList.remove("hide"); 
 }
 
 
