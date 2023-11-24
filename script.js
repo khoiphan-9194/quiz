@@ -181,9 +181,9 @@ function Timeup()
 
 function startHider() {
     //remove instructions and start Quiz button from page
+    viewscoreEl.classList.add("hide");
     instructionsEl.classList.add("hide");
     start_buttonEl.classList.add("hide");
-  
     // display questions and answers
     questionDisplay.classList.remove("hide");
     buttonDisplay.classList.remove("hide");
@@ -262,9 +262,11 @@ function submission()
 
     start_buttonEl .addEventListener("click", function (event) {
         event.preventDefault();
+   
         startHider();
         showQuestion();
         countdown();
+        
     });
     
 
@@ -298,10 +300,12 @@ function submission()
 
    
              //clear scores from local storage and remove the current list
-      clear_scoresEl.addEventListener("click", function () {
-        localStorage.clear();
-        high_scores_listEl.innerHTML = '';   
-        });
+       clear_scoresEl.addEventListener("click", function () 
+            {
+                 localStorage.clear();
+                high_scores_listEl.innerHTML = '';   
+            
+            });
         
 
     viewscoreEl.addEventListener("click",function(event)
