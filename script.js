@@ -137,13 +137,13 @@ function showQuestion()
 
 
 
-//<h4 id="answer">answer: </h4>
+
 function checkAnswer(selectedAnswer)
 {
     var text;
     if(selectedAnswer===question_data[questionIndex].correctAnswer)
     {
-      text = getAnswer.textContent = "correct";
+      text = getAnswer.textContent = "Correct";
 
         score = score+correct;
         scoreDisplay.textContent = score;
@@ -213,7 +213,8 @@ function Timeup()
        // display questions and answers
     questionDisplay.classList.add("hide");
     buttonDisplay.classList.add("hide");
-
+    endGameEl.classList.remove("hide");
+  
      clearInterval(timeInterval);
       
     
@@ -246,6 +247,8 @@ function startHider() {
     // display questions and answers
     questionDisplay.classList.remove("hide");
     buttonDisplay.classList.remove("hide");
+    displayEl.classList.remove("hide");
+    
    
 }
 
@@ -340,6 +343,11 @@ function submission()
     
 
             localStorage.setItem("score_dataArr", JSON.stringify(score_dataArr));
+
+            endGameEl.classList.add("hide");
+            displayEl.classList.add("hide");
+            high_scoresEl.classList.remove("hide");
+            
             renderMessage();
              
                });

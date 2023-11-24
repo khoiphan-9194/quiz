@@ -86,16 +86,6 @@ header div a:hover {
 }
 
 
-#start_btn
-{
- 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  
- 
-}
 
 .quiz-box {
 
@@ -115,15 +105,15 @@ header div a:hover {
 .start-button {
     font-weight: bold;
     width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+    position: relative;
+    left: 40%;
     text-decoration: none;
     font-size: 30px;
    
 }
   
-   
+
 
 
 .start-button:hover{
@@ -203,8 +193,3 @@ header div a:hover {
 
 
 
-/*
-   <input type="text" name="initials" id="initials" placeholder="Initials">
-            <button type="submit" class="submit" disabled>Submit</button>
-
-*/
