@@ -1,24 +1,12 @@
-# 03 JavaScript: Password Generator
+# Assignment #4: JavaScript, Code Quiz
+User Story
 
-## Your Task
-
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
-
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
-
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
-
-## User Story
-
-```
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
-```
 
 ## Acceptance Criteria
 
-```
 GIVEN I am taking a code quiz
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
@@ -30,70 +18,62 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
-```
 
-## Mock-Up
 
-The following animation demonstrates the application functionality:
+## Summary
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+Using JavaScript, I created a JavaScript Code Quiz that must contain the following:
 
-## Grading Requirements
+    Instructions on how the quiz plays
+    User can click on the start button
+    A timer starting when quiz begins
+    The ability to loop thru multiple choice questions & answers
+    Statement showing if answer chosen was right or wrong
+    Time subtracted from incorrect answer selection
+    The ability to save player initials & top scores
+    The ability to clear high scores
+    The ability to view high scores
+    The ability to go back & retake quiz
+    Game over presented when all questions answered OR timer runs out
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+### Languages
+* HTML
+* CSS
+* JavaScript
 
-This Challenge is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria.
+## Usage
+### User
+* In order to run the application, click on the [link](https://khoiphan-9194.github.io/quiz/)
+* Once you have been redirected to the web-page, there will be an instruction and  click on the start button
+* Timer will be 60 seconds
 
-### Deployment: 32%
+## Accessories Used
+### Languages
+* HTML
+* CSS
+* JavaScript
+Newly created index.html file with the following structure:
 
-* Application deployed at live URL.
+![alt text](./Assets/structure.jpg "html")
 
-* Application loads with no errors.
+Newly created script.js file with the following:
 
-* Application GitHub URL submitted.
+    List of variables
+    List of eventListeners
+    List of functions
 
-* GitHub repository contains application code.
 
-### Application Quality: 15%
+## Application Screenshot
 
-* Application user experience is intuitive and easy to navigate.
+![alt text](./Assets/1.png "screenshot1")
+![alt text](./Assets/2.png "screenshot2")
+![alt text](./Assets/3.png "screenshot3")
+![alt text](./Assets/4.png "screenshot4")
+![alt text](./Assets/5.png "screenshot5")
 
-* Application user interface style is clean and polished.
+## Links
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* Deployed URL Link: https://github.com/khoiphan-9194/quiz
+* GitHub Repository Link: https://khoiphan-9194.github.io/quiz/
